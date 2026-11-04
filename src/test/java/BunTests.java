@@ -8,7 +8,7 @@ public class BunTests {
 
         @Test
         public void bunGetterTest() {
-            String expectedName = "Булочка";
+            String expectedName = "Ржаная булочка";
             float expectedPrice = 123.4f;
 
             Bun bun = new Bun(expectedName, expectedPrice);
