@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class IngredientTests {
 
     @Test
-    public void IngredientGetterTest() {
+    public void ingredientGetterTest() {
         IngredientType expectedType = IngredientType.SAUCE;
         String expectedName = "Кетчуп";
         float expectedPrice = 45.6f;

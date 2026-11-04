@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class BunTests {
 
         @Test
-        public void BunGetterTest() {
+        public void bunGetterTest() {
             String expectedName = "Булочка";
             float expectedPrice = 123.4f;
 
