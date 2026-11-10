@@ -1,22 +1,25 @@
 import org.junit.jupiter.api.Test;
 import praktikum.Bun;
 
-import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BunTests {
 
-        @Test
-        public void bunGetterTest() {
-            String expectedName = "Ржаная булочка";
-            float expectedPrice = 123.4f;
+    private final String expectedName = "Ржаная булочка";
+    private final float expectedPrice = 123.4f;
 
+        @Test
+        public void bunNameGetterTest() {
             Bun bun = new Bun(expectedName, expectedPrice);
 
-            assertAll(
-                    () -> assertEquals(expectedName, bun.getName(), "Неверное имя"),
-                    () -> assertEquals(expectedPrice, bun.getPrice(), 0f, "Неверная цена")
-            );
+            assertEquals(expectedName, bun.getName(), "Неверное имя");
+        }
+
+        @Test
+        public void bunPriceGetterTest() {
+            Bun bun = new Bun(expectedName, expectedPrice);
+
+            assertEquals(expectedPrice, bun.getPrice(), 0f, "Неверная цена");
         }
 
 }
